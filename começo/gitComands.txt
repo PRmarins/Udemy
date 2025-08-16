@@ -1,3 +1,0 @@
-git add ".nome"
-git commint -m "mensagem para commit"
-git push -u origin main
