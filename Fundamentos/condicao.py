@@ -1,6 +1,6 @@
 # tags: lista, condicional
 
-# innformações sobre o filme
+# informações sobre o filme
 
 dict_filme = {}
 
@@ -8,9 +8,9 @@ while True:
 
     nameMovie = input("Digite o nome do filme:\n")
     yearRelease = int(input("Digite o ano de laçamento:\n"))
-    ranting = float(input("Digite a nota para esse filme:\n"))
+    rating = float(input("Digite a nota para esse filme:\n"))
     
-    dict_filme[nameMovie] = yearRelease,ranting
+    dict_filme[nameMovie] = yearRelease,rating
     
     continuar = input("Deseja continuar?\n") .strip() .upper()
     if continuar != "S":

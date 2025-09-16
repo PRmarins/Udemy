@@ -1,11 +1,15 @@
-# tags: args, *args, funcao args
+# tags: args, *args, funcao args, *kwargs, kwargs, **kwargs
 
 '''
     Se utiliza quando não sabemos quantos argumentos vamos a dar a uma determinada função
     Os agumentos são passados como uma tupla.
 
-    se utuliza * para poder usart esse tipo de função    
+    se utuliza * para poder usart esse tipo de função
+
+    **kwargs - Uso de dicionarios
 '''
+
+#####   *ARGS
 
 def soma (*sum):
     soma_total = int(0)
@@ -30,3 +34,13 @@ user_numbers = tuple(user_numbers)
 soma_total = soma(*user_numbers)
 
 print(f"A soma de seus números é {soma_total}")
+
+#### **KWARGS
+
+def presentation (**data):
+    for key, value in data.items():
+        print(f"{key} - {value}")
+print("Lista de cursos:")
+presentation(name = "Python", category = "Backend", dificultad = "Iniciante")
+presentation(name = "Visão computacional", category = "IA", dificultad = "Avançado")
+presentation(name = "Dashboards com Dash", category = "Data Science", dificultad = "Itermediario")
