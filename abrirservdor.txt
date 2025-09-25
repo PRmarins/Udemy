@@ -1,0 +1,5 @@
+Ver o ip da "maquina Servidor" con ipconfig.
+
+Executar código python -m http.server
+
+Já pode entrar na maquina usando o ip:"codigo que sai no terminal"
